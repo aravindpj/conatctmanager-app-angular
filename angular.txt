@@ -1,0 +1,9 @@
+Angular -front end development Framework
+Basic Component
+1.create project-ng new project-name 
+2.run project - ng serve
+1.generating components: ng g c components-name
+Basic Bilding Blocks
+1.Module - used to import 3r party libraries
+2.Components - to create html page (html,css,ts)
+3.selctors -it will replace html page for that components

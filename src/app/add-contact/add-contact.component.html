@@ -1,0 +1,104 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col">
+      <h1>
+        <i class="fa-solid fa-user-plus"></i> &nbsp;Contact management
+        application
+      </h1>
+
+      <p class="mt-2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo
+        commodi, labore itaque atque ab dolor ut nisi illum. Neque
+        necessitatibus quo culpa dolores placeat nostrum id officiis? Rerum,
+        reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Minus illo commodi, labore itaque atque ab dolor ut nisi illum. Neque
+        necessitatibus quo culpa dolores placeat nostrum id officiis? Rerum,
+        reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Minus illo commodi, labore itaque atque ab dolor ut nisi illum. Neque
+        necessitatibus quo culpa dolores placeat nostrum id officiis? Rerum,
+        reprehenderit?
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <form class="border p-4 rounded">
+        <div class="mb-2">
+          <input
+            type="text"
+            name="contactName"
+            [ngModel]="contactName"
+            id=""
+            class="form-control"
+            placeholder="Name"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="Photo URL"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="Email id"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="Mobile number"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="Company"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-control"
+            placeholder="Title"
+          />
+        </div>
+        <div class="mb-2">
+          <select name="" id="" class="form-control">
+            <option value="" selected hidden disabled>select group</option>
+            <option value="{{group.id}}" *ngFor="let group of allGroups" let >{{group.name}}</option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <button (click)="addContact()" type="button" class="btn btn-success m-2">Create</button>
+          <button type="button" class="btn btn-danger m-2">Close</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-4">
+      <img
+        src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o="
+        alt=""
+        class="contact-image border"
+      />
+    </div>
+  </div>
+</div>
